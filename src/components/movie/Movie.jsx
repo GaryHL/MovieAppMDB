@@ -1,14 +1,16 @@
-import React from 'react'
+import React from 'react';
+import {motion} from 'framer-motion';
 
-function Movie (title)  {
+import apiConfig from '../../api/apiConfig';
+import './movie.scss';
+
+function Movie ({movie}){
   return (
-    <div>
-        <h2 key={movie.id}>{movie.title}</h2>
-        <h2>test</h2>
-        <h2>{title}</h2>
-        {/* <img src={'https://image.tmdb.org/t/p/w500' + movie.backdrop_path}/> */}
-    </div>
-  )
+    <motion.div layout initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}}>
+        <h2 className='title_movie'>{movie.title}</h2>
+        <img className='img_movie' src={apiConfig.w500Image + movie.backdrop_path} alt=""/>
+    </motion.div>
+  ) 
 }
 
 export default Movie

@@ -1,9 +1,13 @@
-import './App.css';
-import Movies from './components/movies/Movies';
+import './App.scss';
+import Router from './router/Router'
+
+
+
 function App() {
+
   return (
     <div className="App">
-      <Movies/>
+      <Router/>
     </div>
   );
 }
