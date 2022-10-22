@@ -1,0 +1,36 @@
+.filter_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin:2vw 0vh;
+  .button_filter {
+    color: white;
+    margin: 0vh 4vh 4vh 4vh;
+    font-weight: 700;
+    letter-spacing: 3px;
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 0.8vh;
+    animation: button_defect 0.1s;
+  }
+
+  .button_filter.active::after {
+    animation: active_button_filter 0.5s;
+    transition: 2s;
+    width: 100%;
+    height: 3px;
+    content: "";
+    position: absolute;
+    background-color: tomato;
+    left: 0;
+    bottom: 0;
+  }
+}
+@keyframes active_button_filter {
+    0%{     
+          width:0%;
+    }
+    100%{
+          width:100%;
+    }
+  }

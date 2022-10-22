@@ -30,6 +30,10 @@ const MoviesPopular = () => {
 
   return (
     <>
+    <div className="container_main">
+      <div className="movieApp_title">
+        <h1>MOVIE APP</h1>
+      </div>
       <Filter
         popular={popular}
         setFiltered={setFiltered}
@@ -43,6 +47,7 @@ const MoviesPopular = () => {
           })}
         </AnimatePresence>
       </motion.div>
+    </div>
     </>
   );
 };

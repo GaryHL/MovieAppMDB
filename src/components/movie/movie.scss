@@ -5,6 +5,12 @@
     border-radius:1rem;
     margin-bottom:1rem;
 }
+.img_movie:hover{
+    cursor:pointer;
+    transform: scale(1.1);
+    object-fit:cover;
+}
 .title_movie{
-    font-size:0.2vh;
+    font-size:3vh;
+    color:white;
 }
