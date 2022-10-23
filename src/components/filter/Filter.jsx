@@ -32,7 +32,7 @@ function Filter({ setActiveGenere, activeGenere, setFiltered, popular }) {
       setActiveGenere(35)
     }
     else if(e.target.id == "3"){
-      setActiveGenere(27)
+      setActiveGenere(28)
     }
   }
 
