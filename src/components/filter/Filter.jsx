@@ -13,10 +13,9 @@ function Filter({ setActiveGenere, activeGenere, setFiltered, popular }) {
     }
     const filtered = popular.filter((movie) =>
       movie.genre_ids.includes(activeGenere)
-    );
-    setFiltered(filtered);
-  }, [activeGenere]);
-
+      );
+      setFiltered(filtered);
+    }, [activeGenere]);
   function cambioFilter(e){
     let btn1 = document.getElementById("1")
     let btn2 = document.getElementById("2")

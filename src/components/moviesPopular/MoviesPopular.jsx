@@ -19,13 +19,13 @@ const MoviesPopular = () => {
 
   const fetchPopular = async () => {
     const data = await fetch(
-      `${apiConfig.baseUrl}movie/popular?api_key=${apiConfig.apikey}&language=en-US&page=1`
+      `${apiConfig.baseUrl}movie/popular?api_key=${apiConfig.apikey}&language=en-US&page=3`
     );
     const movies = await data.json();
-    // console.log(movies.results);
+    // console.log(movies.results); 
     setPopular(movies.results);
     setFiltered(movies.results);
-    console.log(popular);
+    console.log(popular)
   };
 
   return (
