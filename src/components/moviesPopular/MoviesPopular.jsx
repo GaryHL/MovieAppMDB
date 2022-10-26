@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import "./moviesPopular.scss";
 
+import Loader from '../loader/Loader'
 import apiConfig from "../../api/apiConfig";
 import Movie from "../movie/Movie";
 import Filter from "../filter/Filter";
@@ -30,6 +31,7 @@ const MoviesPopular = () => {
 
   return (
     <>
+    <Loader/>
     <div className="container_main">
       <div className="movieApp_title">
         <h1>MOVIE APP</h1>
