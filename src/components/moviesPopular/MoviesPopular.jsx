@@ -20,7 +20,7 @@ const MoviesPopular = () => {
 
   const fetchPopular = async () => {
     const data = await fetch(
-      `${apiConfig.baseUrl}movie/popular?api_key=${apiConfig.apikey}&language=en-US&page=4`
+      `${apiConfig.baseUrl}movie/popular?api_key=${apiConfig.apikey}&language=en-US&page=1`
     );
     const movies = await data.json();
     // console.log(movies.results); 
