@@ -1,2 +1,7 @@
 # MovieAppMDB
-App consumiendo una API publica
+App consumiendo una api de peliculas pública.
+
+## Tecnologías utilizadas;
+- ReactJs
+- Sass
+- Api-rest
