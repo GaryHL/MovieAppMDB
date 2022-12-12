@@ -5,4 +5,5 @@ App consumiendo una api de peliculas pública.
 - ReactJs
 - Sass
 - Api-rest
-[![Captura.png](Captura.png)](https://postimg.cc/5QQkRwMJ)
+[![Captura.png](https://i.postimg.cc/yxL4WPQD/Captura.png)](https://postimg.cc/5QQkRwMJ)
+
